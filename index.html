@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Data Usage Estimator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Data Usage Estimator</h1>
+        <form id="dataUsageForm">
+            <label for="quality">Select Video Quality:</label>
+            <select id="quality" name="quality">
+                <option value="0.0625">240p</option>
+                <option value="0.0875">360p</option>
+                <option value="0.15625">480p</option>
+                <option value="0.34375">720p (30FPS)</option>
+                <option value="0.515625">720p (60FPS)</option>
+                <option value="0.577">1080p (30FPS)</option>
+                <option value="0.865">1080p (60FPS)</option>
+                <option value="1.217">1440p (2K 30FPS)</option>
+                <option value="1.729">1440p (2K 60FPS)</option>
+                <option value="3.009">2160p (4K 30FPS)</option>
+                <option value="4.545">2160p (4K 60FPS)</option>
+            </select>
+            <label for="duration">Enter Video Duration (in minutes:seconds or seconds):</label>
+            <input type="text" id="duration" name="duration" placeholder="e.g., 5:30 or 330" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
